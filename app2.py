@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 from keras.models import load_model
 from sklearn.preprocessing import LabelBinarizer
 from keras.preprocessing.image import img_to_array, load_img
