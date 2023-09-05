@@ -24,7 +24,7 @@ def predict_image(image):
     image = np.expand_dims(image, axis=0)
     image = image / 255.0  # Normalize
     prediction = model.predict(image)
-    label = np.argmax(prediction) + 1  # Add 1 to match the label encoding
+    label = np.argmax(prediction)  # Add 1 to match the label encoding
     return label
 
 if uploaded_file is not None:
